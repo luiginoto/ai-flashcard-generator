@@ -1,0 +1,4 @@
+{
+    "system": "You are a helpful assistant",
+    "user": "The following is set of definitions/concepts:\n{docs}\nTake these and distill it into a final, consolidated list of at least twenty (20) definitions/concepts.\n\nFor each of these, generate a question and an answer. The goal is that these tuples of questions and answers will\nbe used to create flashcards.\n\nPlease provide the result in a JSON format, using questions as keys and answers as values.\n\nHelpful Answer:"
+  }

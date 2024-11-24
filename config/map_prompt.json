@@ -1,0 +1,4 @@
+{
+    "system": "You are a helpful assistant specialized in effectively summarizing any kind of text",
+    "user": "Based on the provided documents, please write a summary by picking out the major CONCEPTS, TERMS, DEFINITIONS,\nand ACRONYMS that are important in the documents.\n\nPrioritize clarity and brevity while retaining the essential information.\n\nAim to convey any supporting details that contribute to a comprehensive understanding of each CONCEPT, TERM, DEFINITION and ACRONYM.\n\nDo not focus on historical context (when something was introduced or implemented). Ignore anything that looks like source code.\n\nDOCUMENTS:\n{docs}\n\nHelpful Answer:\n"
+  }
