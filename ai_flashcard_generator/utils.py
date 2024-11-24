@@ -5,7 +5,8 @@ This module provides helper functions for creating chat prompt templates
 and calculating document lengths using LangChain components.
 """
 
-from typing import Optional, Any, TypedDict, List
+from typing import TypedDict, List, Dict
+import json
 
 from langchain_core.documents import Document
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
@@ -60,3 +61,32 @@ def length_function(llm: ChatOpenAI, documents: List[Document]) -> int:
         Total number of tokens across all documents
     """
     return sum(llm.get_num_tokens(doc.page_content) for doc in documents)
+
+def load_json_file(file_path: str) -> Dict:
+    """Load and parse a JSON file.
+
+    Args:
+        file_path: Path to the JSON file
+
+    Returns:
+        Dictionary containing the parsed JSON data
+
+    Raises:
+        json.JSONDecodeError: If the file contains invalid JSON
+        FileNotFoundError: If the file doesn't exist
+    """
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def save_json_file(data: Dict, file_path: str) -> None:
+    """Save data to a JSON file.
+
+    Args:
+        data: Dictionary to save
+        file_path: Path where to save the JSON file
+
+    Raises:
+        IOError: If there's an error writing the file
+    """
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
