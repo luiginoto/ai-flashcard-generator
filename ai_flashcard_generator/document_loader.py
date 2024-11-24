@@ -10,7 +10,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 
-from base_classes import BaseDocumentLoader
+from ai_flashcard_generator.base_classes import BaseDocumentLoader
 
 
 class DocumentLoader(BaseDocumentLoader):

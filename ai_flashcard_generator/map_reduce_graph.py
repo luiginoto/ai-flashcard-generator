@@ -15,8 +15,8 @@ from langchain.chains.combine_documents.reduce import acollapse_docs, split_list
 from langgraph.constants import Send
 from langgraph.graph import START, END, StateGraph
 
-from base_classes import BaseGraph
-from config import TOKEN_MAX
+from ai_flashcard_generator.base_classes import BaseGraph
+from ai_flashcard_generator.config import TOKEN_MAX
 
 
 class MapReduceGraph(BaseGraph):

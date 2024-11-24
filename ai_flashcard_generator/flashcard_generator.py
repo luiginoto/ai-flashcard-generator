@@ -10,10 +10,10 @@ from typing import Dict, Optional, Type
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 from langchain_core.output_parsers.base import BaseOutputParser
 
-from config import get_llm
-from document_loader import DocumentLoader
-from map_reduce_graph import MapReduceGraph
-from utils import get_prompt_template, length_function, PromptTemplateInput
+from ai_flashcard_generator.config import get_llm
+from ai_flashcard_generator.document_loader import DocumentLoader
+from ai_flashcard_generator.map_reduce_graph import MapReduceGraph
+from ai_flashcard_generator.utils import get_prompt_template, length_function, PromptTemplateInput
 
 
 class FlashcardGenerator:
