@@ -1,12 +1,5 @@
 # 📚 AI Flashcard Generator
 
-## Status
-
-[![Python Versions](https://img.shields.io/pypi/pyversions/langchain.svg)](https://www.python.org/)
-[![License](https://img.shields.io/github/license/yourusername/ai-flashcard-generator.svg)](https://github.com/luiginoto/ai-flashcard-generator/blob/main/LICENSE)
-[![Issues](https://img.shields.io/github/issues/yourusername/ai-flashcard-generator.svg)](https://github.com/luiginoto/ai-flashcard-generator/issues)
-[![Stars](https://img.shields.io/github/stars/yourusername/ai-flashcard-generator.svg)](https://github.com/luiginoto/ai-flashcard-generator/stargazers)
-
 ## 🌟 Overview
 
 AI Flashcard Generator is an intelligent tool that transforms PDF documents into interactive learning flashcards using large language models and map-reduce processing.
